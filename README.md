@@ -2,6 +2,11 @@
 
 **Local-first LaTeX editing through Claude Desktop, Claude Code and Codex.** Inspired by the workflow of community Overleaf MCP servers, but independently implemented for a controlled, GitHub-ready Python project.
 
+輸出的pdf:
+An Evidence-Grounded AI Agent for
+Natural-Language Nutrition and Exercise Tracking
+A Verifiable System Design.pdf
+
 > Status: Working local MCP project scaffold. Tested Python editing core and LaTeX compilation. Claude Desktop/remote Overleaf interactions require configuration on your own machine. This is **not** an official Overleaf product, and does not access Overleaf private APIs.
 
 ## Interaction model
