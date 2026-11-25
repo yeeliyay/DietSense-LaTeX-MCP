@@ -1,0 +1,7 @@
+# Replace paths below with the absolute directory where you unpacked this repo
+[mcp_servers.dietsense_latex]
+command = "C:/PATH/TO/DietSense-LaTeX-MCP/.venv/Scripts/python.exe"
+args = ["C:/PATH/TO/DietSense-LaTeX-MCP/server.py"]
+
+[mcp_servers.dietsense_latex.env]
+LATEX_PROJECT_ROOT = "C:/PATH/TO/DietSense-LaTeX-MCP/project"

@@ -1,0 +1,17 @@
+digraph F {
+ graph [rankdir=TB, bgcolor="white", size="5.1,8", ratio=compress, nodesep=0.22, ranksep=0.24];
+ node [shape=box, style="rounded,filled", fillcolor="#eef3f8", color="#516b85", fontname="Helvetica", fontsize=11, margin="0.12,0.09"];
+ edge [color="#516b85", arrowsize=0.65, fontname="Helvetica", fontsize=9];
+ a [label="Natural-Language Input"];
+ b [label="LLM: Intent + Structured Extraction"];
+ c [label="Schema / Unit Validation", shape=diamond, fillcolor="#f8f3e9"];
+ d [label="Food / MET / History Retrieval"];
+ e [label="Sufficient Evidence?", shape=diamond, fillcolor="#f8f3e9"];
+ x [label="Clarify or Correct Input", fillcolor="#fff3eb"];
+ f [label="Python Energy and Nutrient Analysis"];
+ g [label="Review Changes and Confirm?", shape=diamond, fillcolor="#f8f3e9"];
+ h [label="Save Audited Record in SQLite"];
+ i [label="Generate Evidence-Grounded Report"];
+ z [label="Finish / No Write", fillcolor="#fff3eb"];
+ a->b->c; c->d [label=" valid"]; c->x [label=" invalid"]; d->e; e->f [label=" yes"]; e->x [label=" no"]; x->b [style=dashed, constraint=false]; f->g; g->h [label=" yes"]; g->z [label=" no"]; h->i;
+}

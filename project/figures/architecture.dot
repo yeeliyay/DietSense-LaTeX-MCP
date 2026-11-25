@@ -1,0 +1,17 @@
+digraph A {
+ graph [rankdir=TB, bgcolor="white", size="5.1,8", ratio=compress, nodesep=0.28, ranksep=0.3];
+ node [shape=box, style="rounded,filled", fillcolor="#edf3f8", color="#516b85", fontname="Helvetica", fontsize=12, margin="0.12,0.09"];
+ edge [color="#516b85", arrowsize=0.65];
+ a [label="(1) Streamlit Interface"];
+ b [label="(2) Intent / Planner Agent"];
+ c [label="(3) Schema Validation"];
+ d [label="(4) Food Retrieval"];
+ e [label="(5) MET Retrieval"];
+ f [label="(6) History Retrieval"];
+ g [label="(7) Deterministic Python Engine"];
+ h [label="(8) Domain Guardrails"];
+ i [label="(9) Report Agent"];
+ j [label="(10) Human Confirmation"];
+ k [label="(11) SQLite + Provenance"];
+ a->b->c; c->d; c->e; c->f; {rank=same;d;e;f}; d->g; e->g; f->g; g->h->i->j->k; k->f [style=dashed, constraint=false];
+}
