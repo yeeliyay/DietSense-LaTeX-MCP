@@ -1,0 +1,22 @@
+# OpenSpec project context; run openspec init to install agent-specific skills.
+schema: spec-driven
+context: |
+  DietSense-LaTeX-MCP is a local-first Python MCP tool server for editing
+  an IEEE-style DietSense paper stored at project/main.tex.
+  Existing tools support reading sections, previewing diffs, applying approved
+  edits with backups and concurrency checks, compiling PDF, and optional Git sync.
+  Prioritize non-destructive behavior, explicit approval, minimal scope, and
+  IEEEtran-compatible LaTeX. No fabricated references or experiment results.
+  Python 3.11+, unittest, and pdfLaTeX (for build functionality).
+rules:
+  proposal:
+    - Explain the user's problem and the affected MCP tools.
+    - State what must remain backward compatible.
+  specs:
+    - Use SHALL requirements and WHEN/THEN scenarios.
+    - Include failure, user-approval, and security cases.
+  design:
+    - Name changed modules and API/tool signatures.
+    - Discuss LaTeX parsing, path safety, Git synchronization, and rollback.
+  tasks:
+    - Include test commands, regression checks, and documentation updates.

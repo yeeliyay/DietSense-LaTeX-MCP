@@ -26,6 +26,14 @@ A Verifiable System Design.pdf
 | `list_project_files`, `read_project_file` | Inspect safe project text assets |
 | `git_sync_status`, `git_fetch_remote`, `git_push_to_overleaf` | Optional Git Bridge with explicit push consent |
 
+## OpenSpec (spec-driven development)
+
+This repository includes an `openspec/` specification scaffold and a proposed (not yet implemented) `add-pdf-layout-inspection` change.
+
+OpenSpec is a **development-planning layer**, not a replacement for the Python MCP server. Install the OpenSpec CLI with a compatible Node.js version, then run `openspec init` in the repository root to configure your supported coding assistant (e.g., Claude Code or Codex). Claude Desktop MCP configuration remains separate.
+
+Read [Windows OpenSpec instructions](docs/OPENSPEC.md), [baseline specifications](openspec/specs/), and [the PDF layout inspection proposal](openspec/changes/add-pdf-layout-inspection/proposal.md).
+
 ## Quick start (Windows)
 
 Prerequisites: Python 3.11+, a TeX distribution (MiKTeX / TeX Live), optionally Git.
